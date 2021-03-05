@@ -18,6 +18,29 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\DataSet.cpp" />
+    <ClCompile Include="Source\Layer.cpp" />
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\NeuralNet.cpp" />
+    <ClCompile Include="Source\Neuron.cpp" />
+    <ClCompile Include="Source\PerceptronLayer.cpp" />
+    <ClCompile Include="Source\Synapses.cpp" />
+    <ClCompile Include="Source\TrainingStrategy.cpp" />
+    <ClCompile Include="Source\Utility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header\ABNN.h" />
+    <ClInclude Include="Header\Config.h" />
+    <ClInclude Include="Header\DataSet.h" />
+    <ClInclude Include="Header\Layer.h" />
+    <ClInclude Include="Header\NeuralNet.h" />
+    <ClInclude Include="Header\Neuron.h" />
+    <ClInclude Include="Header\PerceptronLayer.h" />
+    <ClInclude Include="Header\Synapses.h" />
+    <ClInclude Include="Header\TrainingStrategy.h" />
+    <ClInclude Include="Header\Utility.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -139,29 +162,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="DataSet.cpp" />
-    <ClCompile Include="Layer.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="NeuralNet.cpp" />
-    <ClCompile Include="Neuron.cpp" />
-    <ClCompile Include="PerceptronLayer.cpp" />
-    <ClCompile Include="Synapses.cpp" />
-    <ClCompile Include="TrainingStrategy.cpp" />
-    <ClCompile Include="Utility.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="ABNN.h" />
-    <ClInclude Include="Config.h" />
-    <ClInclude Include="DataSet.h" />
-    <ClInclude Include="Layer.h" />
-    <ClInclude Include="NeuralNet.h" />
-    <ClInclude Include="Neuron.h" />
-    <ClInclude Include="PerceptronLayer.h" />
-    <ClInclude Include="Synapses.h" />
-    <ClInclude Include="TrainingStrategy.h" />
-    <ClInclude Include="Utility.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
