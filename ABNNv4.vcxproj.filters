@@ -44,34 +44,34 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header\ABNN.h">
+    <ClInclude Include="Source\ABNN.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header\Config.h">
+    <ClInclude Include="Source\Config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header\DataSet.h">
+    <ClInclude Include="Source\DataSet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header\Layer.h">
+    <ClInclude Include="Source\Layer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header\NeuralNet.h">
+    <ClInclude Include="Source\NeuralNet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header\Neuron.h">
+    <ClInclude Include="Source\Neuron.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header\PerceptronLayer.h">
+    <ClInclude Include="Source\PerceptronLayer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header\Synapses.h">
+    <ClInclude Include="Source\Synapses.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header\TrainingStrategy.h">
+    <ClInclude Include="Source\TrainingStrategy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header\Utility.h">
+    <ClInclude Include="Source\Utility.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

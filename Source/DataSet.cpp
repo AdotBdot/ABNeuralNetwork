@@ -1,17 +1,20 @@
 #include "DataSet.h"
 
-abnn::DataSet::DataSet()
+namespace abnn
 {
-}
+	abnn::DataSet::DataSet()
+	{
+	}
 
-abnn::DataSet::DataSet( string PathToDataSet )
-{
-}
+	abnn::DataSet::DataSet( string PathToDataSet )
+	{
+	}
 
-void abnn::DataSet::load( string PathToDataSet )
-{
-}
+	void abnn::DataSet::load( string PathToDataSet )
+	{
+	}
 
-void abnn::DataSet::save( string OutputFile, bool Overwrite )
-{
+	void abnn::DataSet::save( string OutputFile, bool Overwrite )
+	{
+	}
 }
