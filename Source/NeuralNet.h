@@ -22,7 +22,7 @@ namespace abnn
 
 		void setActivationFuncLayer( size_t Layer, Neuron::ActFunc ActivationFunc );
 		void setActivationFuncGlobal( Neuron::ActFunc ActivationFunc );
-		void createPerceptron( std::vector<size_t> Topology );
+		void createPerceptron( std::vector<size_t> Topology, bool initRandomly = true );
 
 		void feedNetwork_1d( Vector1d<nn_t> InputVector );
 		Vector1d<nn_t> getOutput_1d();

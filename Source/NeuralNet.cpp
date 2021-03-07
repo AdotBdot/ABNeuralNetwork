@@ -36,7 +36,7 @@ namespace abnn
 		}
 	}
 
-	void NeuralNet::createPerceptron( std::vector<size_t> Topology )
+	void NeuralNet::createPerceptron( std::vector<size_t> Topology, bool initRandomly )
 	{
 		m_Type = Type::Perceptron;
 
@@ -50,6 +50,14 @@ namespace abnn
 			else
 				l = new PerceptronLayer( Layer::Configuration::Output, dynamic_cast<PerceptronLayer*>( m_Layers.back() ), Topology.at( i ) );
 			m_Layers.push_back( l );
+		}
+
+		if( initRandomly )
+		{
+			for( Layer* l : m_Layers )
+			{
+				l->initRandomly();
+			}
 		}
 	}
 
