@@ -15,7 +15,4 @@ namespace abnn
 
 	template<typename T>
 	using Vector2d = std::vector<std::vector<T>>;
-
-	
-
 }

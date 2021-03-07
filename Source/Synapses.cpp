@@ -65,14 +65,13 @@ namespace abnn
 		m_Connections.at( x ).at( y ) = move( weight );
 	}
 
-
 	void Synapses::initRandomly()
 	{
-		for( vector<nn_t>v : m_Connections )
+		for( size_t x = 0; x < m_SizeX; x++ )
 		{
-			for( nn_t n : v )
+			for( size_t y = 0; y < m_SizeY; y++ )
 			{
-				n = random();
+				setWeight( x, y, random() );
 			}
 		}
 	}

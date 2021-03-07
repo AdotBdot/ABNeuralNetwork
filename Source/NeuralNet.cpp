@@ -59,6 +59,7 @@ namespace abnn
 				l->initRandomly();
 			}
 		}
+
 	}
 
 	void NeuralNet::feedNetwork_1d( Vector1d<nn_t> InputVector )

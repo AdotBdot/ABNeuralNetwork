@@ -78,17 +78,17 @@ namespace abnn
 
 	void PerceptronLayer::initRandomly()
 	{
-		m_InWeights->initRandomly();
-		for( nn_t n : *m_Biases )
-			n = random();
+		if( m_Configuration != Layer::Configuration::Input )
+		{
+			m_InWeights->initRandomly();
+			for( nn_t n : *m_Biases )
+				n = random();
+		}
 	}
 
 	void PerceptronLayer::feedLayer()
 	{
-		if( m_Configuration == Configuration::Input )
-		{
-		}
-		else
+		if( m_Configuration != Configuration::Input )
 		{
 			input_1d( m_PrevLayer->getOutput_1d() );
 			activateNeurons();
@@ -103,18 +103,18 @@ namespace abnn
 				m_Neurons[ i ]->input( Input.at( i ) );
 			}
 		else
-			for( size_t y = 0; y < m_Neurons.size(); y++ )
+			for( size_t n = 0; n < m_Neurons.size(); n++ )
 			{
 				nn_t InVal = 0.f;
 
-				for( size_t x = 0; x < m_PrevLayer->getNeuronsCount(); x++ )
+				for( size_t prev_n = 0; prev_n < m_PrevLayer->getNeuronsCount(); prev_n++ )
 				{
-					InVal += Input[ x ] * m_InWeights->getWeight( x, y );
+					InVal += Input[ prev_n ] * m_InWeights->getWeight( prev_n, n );
 					if( m_UseBias )
-						InVal += m_Biases->at( y );
+						InVal += m_Biases->at( n );
 				}
 
-				m_Neurons[ y ]->input( InVal );
+				m_Neurons[ n ]->input( InVal );
 			}
 	}
 
